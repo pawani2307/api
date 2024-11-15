@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+.frames {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.frame {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recipe-details h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+.recipe-details p {
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .frames {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frame {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <input type="number" id="calorieLimit" placeholder="Enter Calorie Limit (kcal)" />
+        <button onclick="fetchRecipes()">Search Recipes</button>
+        <div class="frames">
+            <div class="frame" id="frame1">
+                <h2>Indian Subcontinent Recipes</h2>
+                <div id="result1"></div>
+            </div>
+            <div class="frame" id="frame2">
+                <h2>Angolan Recipes</h2>
+                <div id="result2"></div>
+            </div>
+            <div class="frame" id="frame3">
+                <h2>African Recipes</h2>
+                <div id="result3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="new.js">
+     
+    </script>
+</body>
+</html>
